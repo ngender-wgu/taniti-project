@@ -1,0 +1,211 @@
+/*
+Primary colors:
+	Soft Red - #ff0033
+	Red - #cc0000
+
+Secondary colors:
+	Dim gray - #676767
+	Silver   - #BDBDBD
+*/
+
+* {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+}
+
+header {
+	background-color: #cc0000;
+}
+
+body {
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	float: left;
+	margin: 15px;
+	padding-right: 10px;
+}
+
+html,body {
+margin: 0px;
+padding: 0px;
+border: 0px;
+left: 0px;
+top: 0px;
+}
+
+body > a:visited {
+	color: blue;
+}
+
+body > a:link {
+	color: blue;
+}
+
+label {
+  display: inline;
+  width: 250px;
+  text-align: right;
+}
+
+.navLink {
+    background-color: #676767;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	padding-left: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.navLink a:visited {
+	color: black;
+}
+
+.navlink a {
+    text-align: center;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 17px;
+	margin: 20px;
+}
+
+.dropdown {
+    text-align: center;
+    padding: 5px 50px;
+    text-decoration: none;
+	padding-left: 3px;
+	padding-right: 3px;
+	display: inline-block;
+}
+
+.navInputs{
+    color: #BDBDBD;
+	padding: 5px 30px;
+    text-align: center;
+    font-size: 17px;
+	padding-right: 1%;
+	border: 2px solid black;
+	width: 385px;
+	background-color: #BDBDBD;
+}
+
+.searchEntry{
+	background-color: #BDBDBD;
+	border: 2px solid black;
+}
+
+.centered {
+	text-align: center;
+	margin: auto;
+}
+
+.branding {
+	float: center;
+	text-align: center;
+}
+
+footer {
+	background-color: #676767;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+	width: 100%;
+
+}
+
+.box1 {
+	margin: 5px;
+}
+
+.box2 {
+	margin: 3px;
+}
+
+.contact_us-button {
+	border: 2px solid black;
+	background-color: #BDBDBD;
+	width: 150px;
+	text-align: center;
+	color: black;
+}
+
+.navLink-button {
+	border: 2px solid black;
+	background-color: #BDBDBD;
+	width: 100px;
+	text-align: center;
+	color: black;
+}
+
+.form-border {
+	border: 2px solid black;
+	background-color: #BDBDBD;
+	width: 50%;
+	text-align: center;
+	color: black;
+}
+
+.dropDown_content-border {
+	border: 2px solid black;
+	background-color: #BDBDBD;
+	width: auto;
+	padding: 2px;
+	text-align: center;
+	color: black;
+}
+
+.dropdown-button {
+	border: 2px solid black;
+	background-color: #BDBDBD;
+	width: 170px;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	background-color: #676767;
+}
+
+button {
+	background-color: #BDBDBD;
+}
+
+
+/*
+CSS below is for implementing the navigation bar and making it hoverable
+*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	border: 2px solid black;
+	background-color: #BDBDBD;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	width: auto;
+	background-color: #BDBDBD;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
