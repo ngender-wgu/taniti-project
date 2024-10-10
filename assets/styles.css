@@ -214,6 +214,7 @@ CSS below is for implementing the navigation bar and making it hoverable
 	border: 2px solid #f2e9da;
 	background-color: #83c7b4;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 10;
 }
 
 .dropdown:hover .dropdown-content {
