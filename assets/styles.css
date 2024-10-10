@@ -28,6 +28,7 @@ img {
 	float: left;
 	margin: 15px;
 	padding-right: 10px;
+	padding-left: 25px;
 }
 
 html,body {
@@ -117,7 +118,6 @@ footer {
     left: 0; 
     z-index: 10;
 	width: 100%;
-
 }
 
 .box1 {
@@ -193,6 +193,16 @@ li {
 
 #searchSubmitButton:hover {
 	background-color: #57bead;
+}
+
+.vertical-display-images {
+	display: inline-block;
+	width: 25%
+}
+
+.vertical-display-text {
+	display: inline-block;
+	width: 75%
 }
 
 /*
