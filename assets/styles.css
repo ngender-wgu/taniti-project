@@ -128,6 +128,14 @@ footer {
 	margin: 3px;
 }
 
+ul {
+	padding-left: 40%;
+}
+
+li {
+	list-style-position: initial;
+}
+
 .contact_us-button {
 	border: 2px solid #f2e9da;
 	background-color: #b9d9c6;
