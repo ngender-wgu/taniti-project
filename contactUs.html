@@ -4,14 +4,10 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width"/>
 		<link rel="stylesheet" href="assets/styles.css"/>
-		<title>FAQ</title>
+		<title>Contact Us!</title>
 	</head>
 	
 	<header>
-		<div>
-			<h1 id="TanitiBranding" class="branding centered">Have a question?</h1>
-		</div>
-		
 		<!--Navigation bar-->
 		<div class="navLink centered">
 			<a class="navLink box2 navLink-button" href="index.html">Home</a>
@@ -34,12 +30,15 @@
 			</div>
 			<a class="navLink box2 navLink-button" href="faq.html">FAQ</a>
 			<div class="navInputs centered box2 navInputs-border">
-				<input style="background-color:#BDBDBD;" type="submit" value="Search" id="searchSubmitButton">
+				<input type="submit" value="Search" id="searchSubmitButton">
 				<input class="searchEntry" type="text" placeholder="Enter your query here..." disabled> <!-- I don't need to actually have this implemented, so skipping. -->
 			</div>
 		</div>
 	</header>
 	<body>
+
+		<br><h1 id="TanitiBranding" class="branding centered">Have a question? Fill out this form!</h1><br><br>
+
 		<form class="centered form-border">
 		
 			<h3>Your information:</h3>
@@ -50,11 +49,8 @@
 			<label for="customerEmail">Email address:</label><br>
 			<input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email" required><br><br>
 			
-			<label for="customerTimeZone">Time zone:</label><br>
-			<input type="text" id="customerTimeZone" name="customerTimeZone" placeholder="What is your time zone?" required><br><br>
-			
 			<label for="customerTimeZone">Your Inquiry:</label><br>
-			<textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br><br>
+			<textarea id="w3review" name="w3review" rows="4" cols="50" required></textarea><br><br>
 			
 			<input type="submit" value="Submit">
 		</form>

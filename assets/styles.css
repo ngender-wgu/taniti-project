@@ -1,11 +1,10 @@
 /*
-Primary colors:
-	Soft Red - #ff0033
-	Red - #cc0000
-
-Secondary colors:
-	Dim gray - #676767
-	Silver   - #BDBDBD
+Color Pallet:
+	#f4f3ec || Pearl-white -- Back for the body
+	#f2e9da || Sand -- Borders
+	#b9d9c6 || Light Green -- Back for buttons
+	#83c7b4 || Sea Green -- Back for panels
+	#57bead || Blue-Green -- Selected
 */
 
 * {
@@ -14,11 +13,11 @@ Secondary colors:
 }
 
 header {
-	background-color: #cc0000;
+	background-color: #83c7b4;
 }
 
 body {
-	background-color: white;
+	background-color: #f4f3ec;
 }
 
 a {
@@ -39,14 +38,6 @@ left: 0px;
 top: 0px;
 }
 
-body > a:visited {
-	color: blue;
-}
-
-body > a:link {
-	color: blue;
-}
-
 label {
   display: inline;
   width: 250px;
@@ -54,10 +45,11 @@ label {
 }
 
 .navLink {
-    background-color: #676767;
+    background-color: #83c7b4;
 	padding-bottom: 5px;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-left: 10px;
+	padding-right: 10px;
 	display: flex;
 	justify-content: center;
 }
@@ -72,31 +64,37 @@ label {
     text-decoration: none;
     font-size: 17px;
 	margin: 20px;
+	padding-right: 3px;
+}
+
+.navLink a:hover {
+	background-color: #57bead;
 }
 
 .dropdown {
     text-align: center;
-    padding: 5px 50px;
+    padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
     text-decoration: none;
-	padding-left: 3px;
-	padding-right: 3px;
 	display: inline-block;
 }
 
 .navInputs{
-    color: #BDBDBD;
+    color: #83c7b4;
 	padding: 5px 30px;
     text-align: center;
     font-size: 17px;
 	padding-right: 1%;
-	border: 2px solid black;
-	width: 385px;
-	background-color: #BDBDBD;
+	border: 2px solid #f2e9da;
+	width: fit-content;
+	background-color: #b9d9c6;
 }
 
 .searchEntry{
-	background-color: #BDBDBD;
-	border: 2px solid black;
+	background-color: #b9d9c6;
+	border: 2px solid #f2e9da;
 }
 
 .centered {
@@ -110,7 +108,7 @@ label {
 }
 
 footer {
-	background-color: #676767;
+	background-color: #83c7b4;
 	display: flex;
 	justify-content: center;
 	padding: 10px;
@@ -131,32 +129,37 @@ footer {
 }
 
 .contact_us-button {
-	border: 2px solid black;
-	background-color: #BDBDBD;
+	border: 2px solid #f2e9da;
+	background-color: #b9d9c6;
 	width: 150px;
 	text-align: center;
 	color: black;
 }
 
+.contact_us-button:hover {
+	background-color: #57bead;
+}
+
 .navLink-button {
-	border: 2px solid black;
-	background-color: #BDBDBD;
+	border: 2px solid #f2e9da;
+	background-color: #b9d9c6;
 	width: 100px;
 	text-align: center;
 	color: black;
 }
 
 .form-border {
-	border: 2px solid black;
-	background-color: #BDBDBD;
+	border: 2px solid #f2e9da;
+	background-color: #83c7b4;
 	width: 50%;
+	padding-bottom: 50px;
 	text-align: center;
 	color: black;
 }
 
 .dropDown_content-border {
-	border: 2px solid black;
-	background-color: #BDBDBD;
+	border: 2px solid #f2e9da;
+	background-color: #b9d9c6;
 	width: auto;
 	padding: 2px;
 	text-align: center;
@@ -164,21 +167,25 @@ footer {
 }
 
 .dropdown-button {
-	border: 2px solid black;
-	background-color: #BDBDBD;
+	border: 2px solid #f2e9da;
+	background-color: #b9d9c6;
 	width: 170px;
 	text-align: center;
 	color: black;
 }
 
 .selected {
-	background-color: #676767;
+	background-color: #57bead;
 }
 
-button {
-	background-color: #BDBDBD;
+#searchSubmitButton {
+	background-color: #b9d9c6;
+	border: 2px solid #f2e9da;
 }
 
+#searchSubmitButton:hover {
+	background-color: #57bead;
+}
 
 /*
 CSS below is for implementing the navigation bar and making it hoverable
@@ -187,25 +194,25 @@ CSS below is for implementing the navigation bar and making it hoverable
 .dropdown-content {
     display: none;
     position: absolute;
-	border: 2px solid black;
-	background-color: #BDBDBD;
+	border: 2px solid #f2e9da;
+	background-color: #83c7b4;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 	width: auto;
-	background-color: #BDBDBD;
+	background-color: #83c7b4;
 }
 
 .dropdown-content a {
     display: block;
-    color: #000000;
+    color: black;
     padding: 5px;
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
+    color: black;
+    background-color: #57bead;
 }
